@@ -8,6 +8,11 @@
   "projects": {
     "i18n": {
       "projectType": "application",
+        "i18n": {
+          "locales": {
+            "ta": "src/locale/messages.ta.xlf"
+          }
+        },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -46,6 +51,7 @@
                   "maximumWarning": "500kb",
                   "maximumError": "1mb"
                 },
+                
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
@@ -59,6 +65,9 @@
                 }
               ],
               "outputHashing": "all"
+            },
+            "ta": {
+              "localize": ["ta"]
             },
             "development": {
               "buildOptimizer": false,
@@ -79,6 +88,9 @@
             },
             "development": {
               "browserTarget": "i18n:build:development"
+            },
+            "ta":{
+              "browserTarget": "i18n:build:ta"
             }
           },
           "defaultConfiguration": "development"
