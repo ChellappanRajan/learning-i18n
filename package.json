@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "install": "npm run build",
+    "prepare": "npm run build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
